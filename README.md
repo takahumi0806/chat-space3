@@ -9,6 +9,16 @@
 ### Association
 - has_many :groups
 
+## messageテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+
+
 
 ## groups_usersテーブル
 
