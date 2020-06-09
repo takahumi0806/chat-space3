@@ -1,3 +1,15 @@
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false, unique: true|
+|password|string|null: false|
+
+### Association
+- has_many :groups
+
+
 ## groups_usersテーブル
 
 |Column|Type|Options|
