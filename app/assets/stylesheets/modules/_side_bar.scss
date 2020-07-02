@@ -1,0 +1,38 @@
+.side-bar{
+  float: left;
+  background-color: #253141;
+  width: 300px;
+  height: 100vh;
+  color: white;
+  font-weight: bold;
+  &__user{
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    &--name{
+      font-size: 16px;
+      line-height: 100px;
+    }&--icon{
+      color: white;
+      size: 16px;
+      line-height: 100px;
+      text-decoration: none;
+    }
+  }
+  &__group{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 0 20px;
+    overflow: scroll; 
+    &--name{
+      font-size: 15px;
+      padding-top: 20px;
+      text-decoration: none;
+      color: white;
+    }&--message{
+      font-size: 11px;
+      padding: 5px 0 40px;
+    }
+  }
+}
